@@ -15,7 +15,7 @@ async fn main(_spawner: Spawner) {
 
     use embassy_rp::watchdog::*;
     let mut watchdog = Watchdog::new(p.WATCHDOG);
-    watchdog.start(Duration::from_millis(4_500));
+    watchdog.start(Duration::from_millis(14_500));
     // also it seems that specifying anything more than 5_000ms causes it to be optimized
 
 
